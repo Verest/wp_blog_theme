@@ -1,0 +1,20 @@
+.wrapper{
+  line-height: 1.5625em;
+}
+
+//post titles
+.reb_title{
+  margin: 0;
+  padding: 0.7em 0 0.6em;
+}
+
+//different due to header
+.reb_title:first-of-type{
+  padding-top: 0.2em;
+}
+
+//post paragraphs mainly
+p{
+  margin: 0;
+  padding: 1em 0 0.6em;
+}

@@ -8,7 +8,6 @@ Version: 1.0
 
 This theme is used for the blog of Richie Black
 */
-/* CONFIG FILES */
 /*IMPORTS FOR ALL CONFIG PARTIALS*/
 /* COLOR PALLETS */
 /*BREAK POINTS*/
@@ -30,7 +29,6 @@ h2, .nav__list, .to-top, .purpose,
   transform-origin: 0 50%;
   transition: transform 0.25s ease-out, width 0.25s ease-out, top 0.25s ease-out, opacity 0.25s ease-out; }
 
-/*BASE FILES*/
 /*IMPORTS FOR ALL BASE PARTIALS*/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -385,7 +383,6 @@ a {
 .stickyFooter {
   min-height: calc(100vh - 14em); }
 
-/*LAYOUT*/
 .wrapper, .wrapper-row-one, .wrapper-row-two {
   width: 90%;
   margin: 0px auto; }
@@ -421,7 +418,6 @@ a {
       width: 75%;
       margin-right: 25%; } }
 
-/*MODULES*/
 /*IMPORTS FOR ALL CONFIG PARTIALS*/
 #logo {
   width: 2em;
@@ -598,5 +594,19 @@ footer {
   @media only screen and (min-width: 551px) and (min-width: 1024px) {
     .contact {
       margin-right: 3.33%; } }
+
+.wrapper, .wrapper-row-one, .wrapper-row-two {
+  line-height: 1.5625em; }
+
+.reb_title {
+  margin: 0;
+  padding: 0.7em 0 0.6em; }
+
+.reb_title:first-of-type {
+  padding-top: 0.2em; }
+
+p {
+  margin: 0;
+  padding: 1em 0 0.6em; }
 
 /*# sourceMappingURL=style.css.map */
