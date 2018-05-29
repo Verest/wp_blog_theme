@@ -22,8 +22,8 @@ function reb_create_widget($name, $id, $description){
     'description'=>__($description),
     'before_widget'=>'<div class="widget">',
     'after_widget'=>'</div>',
-    'before_title'=>'<h2 class="module_heading">',
-    'after_title'=>'</h2>',
+    'before_title'=>'<h3 class="module_heading">',
+    'after_title'=>'</h3>',
   ));
 }
 

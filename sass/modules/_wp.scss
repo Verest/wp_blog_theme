@@ -18,3 +18,46 @@ p{
   margin: 0;
   padding: 1em 0 0.6em;
 }
+
+
+//widget styles
+.widget:nth-of-type(n+2){
+  width:50%;
+  display: inline-block;
+  margin-left: -4px;
+  @include mq(m){
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.widget:nth-of-type(1){
+  width: 100%;
+}
+
+.side_bar{
+  width: 100%;
+  @include section-border(bottom);
+  @include mq(m){
+    float: right;
+    width: 30%;
+    border-bottom: none;
+    padding-top: 0.7em;
+  }
+}
+
+.main_content{
+  @include mq(m){
+    width: 65%;
+    float: left;
+    max-width: 600px;
+  }
+}
+
+//search bar
+.screen-reader-text{
+  display:none;
+}
+//clear fix
+main{
+  @extend %clearfix;
+}

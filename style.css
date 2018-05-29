@@ -11,7 +11,7 @@ This theme is used for the blog of Richie Black
 /*IMPORTS FOR ALL CONFIG PARTIALS*/
 /* COLOR PALLETS */
 /*BREAK POINTS*/
-.nav__row-one::after, .nav__row-two::after, footer::after {
+.nav__row-one::after, .nav__row-two::after, footer::after, main::after {
   content: '';
   display: table;
   clear: both; }
@@ -608,5 +608,36 @@ footer {
 p {
   margin: 0;
   padding: 1em 0 0.6em; }
+
+.widget:nth-of-type(n+2) {
+  width: 50%;
+  display: inline-block;
+  margin-left: -4px; }
+  @media only screen and (min-width: 768px) {
+    .widget:nth-of-type(n+2) {
+      width: 100%;
+      margin-left: 0; } }
+
+.widget:nth-of-type(1) {
+  width: 100%; }
+
+.side_bar {
+  width: 100%;
+  border-bottom: 2px #A67E6C solid; }
+  @media only screen and (min-width: 768px) {
+    .side_bar {
+      float: right;
+      width: 30%;
+      border-bottom: none;
+      padding-top: 0.7em; } }
+
+@media only screen and (min-width: 768px) {
+  .main_content {
+    width: 65%;
+    float: left;
+    max-width: 600px; } }
+
+.screen-reader-text {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
