@@ -1,6 +1,3 @@
-.wrapper{
-  line-height: 1.5625em;
-}
 
 //post titles
 .reb_title{
@@ -44,18 +41,43 @@ p{
 }
 
 .main_content{
+  min-height: calc(100vh - 14em);
+  display:flex;
+  flex-direction: column;
   @include mq(m){
     width: 65%;
     float: left;
     max-width: 600px;
   }
 }
-
 //search bar
 .screen-reader-text{
   display:none;
 }
+
+//pagination
+.pagination{
+  margin-top:auto;
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.nav-next,
+.nav-previous{
+  min-width: 100px;
+}
+
+//backup if no flex support
+.alignleft{
+  float: left;
+}
+.alignright{
+  float:right;
+}
+
 //clear fix
 main{
   @extend %clearfix;
+  line-height: 1.5625em; //to not mess up header...
 }

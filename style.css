@@ -595,9 +595,6 @@ footer {
     .contact {
       margin-right: 3.33%; } }
 
-.wrapper, .wrapper-row-one, .wrapper-row-two {
-  line-height: 1.5625em; }
-
 .reb_title {
   margin: 0;
   padding: 0.7em 0 0.6em; }
@@ -629,13 +626,36 @@ p {
       width: 30%;
       padding-top: 1.53em; } }
 
-@media only screen and (min-width: 768px) {
-  .main_content {
-    width: 65%;
-    float: left;
-    max-width: 600px; } }
+.main_content {
+  min-height: calc(100vh - 14em);
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 768px) {
+    .main_content {
+      width: 65%;
+      float: left;
+      max-width: 600px; } }
 
 .screen-reader-text {
   display: none; }
+
+.pagination {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between; }
+
+.nav-next,
+.nav-previous {
+  min-width: 100px; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+main {
+  line-height: 1.5625em; }
 
 /*# sourceMappingURL=style.css.map */

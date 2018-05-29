@@ -15,9 +15,12 @@
     <a href="<?php the_permalink() ?>">
       <h3 class="reb_title"><?php the_title(); ?></h3>
     </a>
-    <?php the_content();  ?>
+    <?php the_excerpt();  ?>
   <?php endwhile; else:  ?>
     No Posts Yet
   <?php endif; ?>
+
+  <?php get_template_part('pagination'); ?>
+</div>
 
 <?php get_footer(); ?>
