@@ -36,12 +36,10 @@ p{
 
 .side_bar{
   width: 100%;
-  @include section-border(bottom);
   @include mq(m){
     float: right;
     width: 30%;
-    border-bottom: none;
-    padding-top: 0.7em;
+    padding-top: 1.53em;
   }
 }
 
